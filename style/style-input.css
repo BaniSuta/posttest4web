@@ -92,6 +92,7 @@ header {
 
 td input {
     font-family: 'DM Sans';
+    border-radius: 8px;
     height: 25px;
 }
 
