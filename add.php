@@ -1,12 +1,12 @@
 <?php
 
 if (isset($_POST["submit"])) {
-    $nama = $_POST["nama"];
-    $bensin = $_POST["bensin"];
+    $nama = htmlspecialchars($_POST["nama"]);
+    $bensin = htmlspecialchars($_POST["bensin"]);
     $berat = $_POST["berat"];
-    $ban_dpn = $_POST["ban_dpn"];
-    $ban_blkg = $_POST["ban_blkg"];
-    $jenis = $_POST["jenis"];
+    $ban_dpn = htmlspecialchars($_POST["ban_dpn"]);
+    $ban_blkg = htmlspecialchars($_POST["ban_blkg"]);
+    $jenis = htmlspecialchars($_POST["jenis"]);
 
     echo "
     <script>
